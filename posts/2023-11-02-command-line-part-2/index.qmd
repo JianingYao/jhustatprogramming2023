@@ -87,7 +87,7 @@ Using wildcard (`*`), list out all the number of lines in each `.pdb` file in th
 
 ```{bash}
 ## try it out 
-
+wc -l proteins/*.pdb
 ```
 
 :::
