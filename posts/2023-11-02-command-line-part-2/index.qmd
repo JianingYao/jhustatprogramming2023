@@ -114,7 +114,7 @@ Write the commands for the followings tasks:
 
 ```{bash}
 ## try it out 
-
+wc -l proteins/*.pdb > length.txt
 ```
 
 :::
@@ -194,7 +194,7 @@ Using the `*.pdb` files in the `protein` folder:
 
 ```{bash}
 ## try it out
-
+wc -l proteins/*.pdb | sort -n | head -n 1
 ```
 
 
@@ -490,6 +490,7 @@ Knowing about `$1`, `$2`, `$3`, let's modify `middle.sh` such that we can use ad
 
 ```{bash}
 ## try it out
+head -n "$2" "$1" | tail -n "$3"
 
 ```
 
